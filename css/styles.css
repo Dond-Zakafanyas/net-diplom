@@ -25,7 +25,6 @@ body {
 }
 header {
     width: 100%;
-    height: 960px;
     background: url(../img/header-background.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -80,7 +79,7 @@ header::before {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10%;
-    margin-bottom: 5.7%;
+    padding-bottom: 6%;
 }
 .social-link {
     display: flex;
@@ -88,8 +87,12 @@ header::before {
     box-sizing: border-box;    
     background-color: #5E3DB3;
     width: 310px;
+    height: 77px;
     max-width: 100%;
     border-radius: 60px;    
+}
+.social-link:nth-child(2) {
+    margin-left: 2.7%;
 }
 .social-logo {
     max-width: 100%;
@@ -106,14 +109,23 @@ header::before {
     font-size: 14px;
     color: white;
     text-transform: uppercase;
-    margin-top: 8%;
-    margin-left: 8%;
 }
 .social-store {
     font-weight: 700;
     font-size: 14px;
     color: white;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.social-texts {
+    display: flex;
+    width: 170px;
+    height: 77px;
+    margin-left: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (min-width: 641px) and (max-width: 960px) {
@@ -122,7 +134,7 @@ header::before {
 }
 .header__text {
     font-size: 3.2em;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .header__text__1 {
     margin-left: 12%;
@@ -131,6 +143,13 @@ header::before {
 .header__text__2 {
     margin-left: 23%;
     width: 100%;
+}
+.social {
+    margin-top: 40%;
+    padding-bottom: 11%;
+}
+.social-link {
+    width: 300px;   
 }
 }
 
@@ -141,7 +160,7 @@ header::before {
 } 
 .header__text {
     font-size: 1.4em;
-    margin-top: 50%;
+    margin-top: 43%;
 }
 .header__text__1 {
     margin-left: 6.25%;
@@ -150,5 +169,36 @@ header::before {
 .header__text__2 {
     margin-top: 3%;
     margin-left: 20%;
+}
+.social {
+    margin-top: 28%;
+    padding-bottom: 25%;
+}
+.social-link {
+    width: 87%;
+    height: 11vw;
+}
+.social-link:nth-child(2) {
+    margin-left: 0;
+    margin-top: 4.5%;
+}
+.social-logo {
+    width: 6.25%;
+    height: 7.8vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+}
+.social-download {
+    font-size: 8px;
+}
+.social-store {
+    font-size: 8px;
+}
+.social-texts {
+    width: 100px;
+    height: 100%;
+    max-width: 100%;
+    margin-left: 6%;
 }
 }
