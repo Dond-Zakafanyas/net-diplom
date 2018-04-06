@@ -45,6 +45,13 @@ header::before {
     justify-content: center;
     padding-top: 2.34%;
 }
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 .gLogo {
     max-width: 100%;
     width: 210px;
@@ -127,6 +134,111 @@ header::before {
     flex-direction: column;
     justify-content: center;
 }
+.athlets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.players {
+    height: 959px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h2 {
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #E7E7E7;
+    width: 37.5%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #C1C1C1;
+}
+.sport-text {
+    font-size: 20px; 
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 37.5%;
+}
+.athlets .sport-text-1 {
+    margin-bottom: 4%;
+}
+.athlets .sport-text-2 {
+    margin-bottom: 4%;
+}
+.sport-text-3 {
+    width: 100%;
+    height: 300px;
+    background-color: #5E3DB3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.text-3-container {
+    width: 37.5%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sport-text-3 .number::after {
+    background-color: #EFEFEF;
+}
+.sport-text-3 .sport-text-content {
+    color: white;
+}
+.number {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    margin-right: 14px;
+}
+.number::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 24px;
+    border-radius: 10px;
+    background-color: #5E3DB3;
+    transition: width 0.3s ease-in-out;
+    left: 0;
+    bottom: 1;
+}
+.sport-text-content {
+    margin-top: 20px;
+}
+.athlet {
+    position: absolute;
+    left: 0;
+    top: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 641px) and (max-width: 960px) {
 .logo {
@@ -202,3 +314,6 @@ header::before {
     margin-left: 6%;
 }
 }
+
+
+
