@@ -275,7 +275,7 @@ h3 {
 }
 .content-text h2 {
     width: 100%;;
-    margin-top: 26.5%;  
+    margin-top: 18%;  
 }
 
 
@@ -288,10 +288,10 @@ h3 {
     padding-left: 6.7%;   
 }
 .content-text.be-active p {
-    width:  37.5%
+    width:  40%
 }
 .content-text.be-active h2 {
-    margin-bottom: 12.5%; 
+    margin-bottom: 8%; 
 }
 
 
@@ -301,10 +301,10 @@ h3 {
     background-size: cover;  
 }
 .content-text.find-contact {
-    padding-left: 10%;   
+    padding-left: 7%;   
 }
 .content-text.find-contact p {
-    width:  50%
+    width:  50%;
 }
 .content-text.find-contact h2 {
     margin-bottom: 8%; 
@@ -326,8 +326,86 @@ h3 {
     margin-bottom: 12%; 
 }
 
+/*//////////////////////////////////////////////Footer/////////////////////////////////////////////////////*/
 
+footer {
+    width: 100%;
+    background: url(../img/footer-back.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+footer::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8,11,47,0.8);
+}
+.download-bottom-artwork {
+    width: 150px;
+    height: 150px;
+    background-color: #6744C1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.f-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
 
+.f-button {
+    width: 120px;
+    height: 100px;
+}
+
+.download-bottom {
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top: 12%;
+    max-width: 850px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-b-t-span {
+    text-transform: uppercase;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;  
+}
+
+.d-b-t-min-span {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #A495CC;
+}
+
+.download-bottom-text {
+    margin-left: 1.8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.f-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+    padding-bottom: 13.2%;
+}
+
+.f-button-logo {
+    stroke: #ffffff;
+}
 
 
 
@@ -430,7 +508,8 @@ h3 {
     padding-left: 4.3%;   
 }
 .content-text.be-active p {
-    width:  86%
+    width:  86%;
+    margin-bottom: 11.7%; 
 }
 .content-text.be-active h2 {
     margin-bottom: 4.5%; 
@@ -438,35 +517,58 @@ h3 {
 
 
 .content-image.find-contact {
-    order:; 
+    order: 1; 
 }
 .content-text.find-contact {
-    order:; 
-    padding-left: 10%;   
+    order: 2; 
+    padding-left: 4.2%;   
 }
 .content-text.find-contact p {
-    width:  86%
+    width:  86%;
+    margin-bottom: 13%;
 }
 .content-text.find-contact h2 {
-    margin-bottom: 8%; 
+    margin-bottom: 5%; 
 }
 
 
 .content-image.work-it {
-    order:; 
+    order: 3; 
 }
 .content-text.work-it {
-    order:; 
-    padding-left: 6.7%;   
+    order: 4; 
+    padding-left: 4.2%;   
 }
 .content-text.work-it p {
-    width:  65%
+    width:  86%;
+    margin-bottom: 14.3%;
 }
 .content-text.work-it h2 {
-    margin-bottom: 12%; 
+    margin-bottom: 4.5%; 
 }
-
-
+.download-bottom-artwork {
+    margin-bottom: 10%;
+}
+.download-bottom {
+    justify-content: center;
+}
+.d-b-t-span {
+    font-size: 80px;
+}
+.d-b-t-min-span {
+    font-size: 30px;
+}
+.download-bottom-text {
+    margin-left: 0;
+    align-items: center;
+}
+.f-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35%;
+    padding-bottom: 7%;
+}
 }
 
 
@@ -521,7 +623,96 @@ h3 {
     max-width: 100%;
     margin-left: 6%;
 }
+  
+    
+    
+.content-image {
+    width: 100%;
+    height: 105vw;
+}
+.content-text {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 6.25%;
+}
+.content-text h2 {
+    width: 100%;
+    font-size: 28px;
+    margin-top: 11.25%;  
+}
+.content-text.be-active p {
+    width:  75%;
+    margin-bottom: 23.5%; 
+}
+.content-text.be-active h2 {
+    margin-bottom: 8.75%; 
 }
 
 
+.content-image.find-contact {
+    order: 1; 
+}
+.content-text.find-contact {
+    order: 2;  
+}
+.content-text.find-contact p {
+    width:  93%;
+    margin-bottom: 25%;
+}
+.content-text.find-contact h2 {
+    margin-bottom: 7.8%; 
+}
+
+
+.content-image.work-it {
+    order: 3; 
+}
+.content-text.work-it {
+    order: 4; 
+}
+.content-text.work-it p {
+    width:  90%;
+    margin-bottom: 21.8%;
+}
+.content-text.work-it h2 {
+    margin-bottom: 7.5%; 
+}
+    
+.download-bottom-artwork {
+    width:  100px;
+    height: 100px;
+    margin-bottom: 18%;
+}
+.f-button {
+    width: 70px;
+    height: 70px;
+}
+.download-bottom {
+    justify-content: center;
+        padding-top: 25%;
+}
+.d-b-t-span {
+    font-size: 32px;
+}
+.d-b-t-min-span {
+    font-size: 14px;
+}
+.download-bottom-text {
+    margin-left: 0;
+    align-items: center;
+}
+.f-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23.5%;
+    padding-bottom: 25%;
+}
+.f-gLogo {
+    width: 135px;
+    height: 45px;
+}
+    
+}
 
