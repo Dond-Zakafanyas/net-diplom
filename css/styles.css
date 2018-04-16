@@ -74,13 +74,14 @@ header::before {
     margin-top: 11%;
     display: flex;
     letter-spacing: 0.05em;
-    flex-wrap: wrap;    
-}
-.header__text__1 {
+    flex-wrap: wrap; 
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 1540px;
+}
+.header__text__1 {
+
 }
 .header__text__2 {
     margin-left: 27.9%;
@@ -142,11 +143,13 @@ header::before {
 /*//////////////////////////////////////////////Sport block/////////////////////////////////////////////////////*/
 .athlets {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-end;
 }
 .players {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -187,6 +190,8 @@ h3 {
 .sport-text-3 {
     width: 100%;
     height: 300px;
+    position: relative;
+    z-index: -2;
     background-color: #5E3DB3;
     display: flex;
     flex-direction: column;
@@ -251,15 +256,23 @@ h3 {
     background-position: center;
     background-size: 100%;
     position: absolute;
-    max-width: 100%;
-    width: 33%;
+    width: 700px;
     height: 100%;
-    left: 0;
-    margin-left: 15%;
+    right: 50%;
 }
 .player {
+    background: url("../img/basketballer.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
     position: absolute;
-    right: 0;
+    width: 1000px;
+    height: 100%;
+    left: 45%;
+    bottom: 6%;
+    z-index: -3;
+}
+.players .sport-text-3{
+    z-index: -4;
 }
 /*//////////////////////////////////////////////Content block/////////////////////////////////////////////////////*/
 .content {
@@ -637,6 +650,27 @@ h3 {
 .n-3 {
     top: 84%;    
 }
+.athlet {
+    background: url("../img/footballer.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    width: 450px;
+    height: 100%;
+    top: 90px;
+    left: -150px;
+}
+.player {
+    background: url("../img/basketballer.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    width: 550px;
+    height: 100%;
+    left: 400px;
+    bottom: 6%;
+    z-index: -3;
+}
 }
 
 
@@ -801,6 +835,89 @@ h3 {
 .n-3 {
     top: 84%;    
 }
+
+.athlets {
+    align-items: center;
+}
+.players {
+    align-items: center;
+}
+.players h2, .players .sport-text-1, .players .sport-text-2,.athlets h2, .athlets .sport-text-1, .athlets .sport-text-2{
+    margin-left: 8%;
+}
+h2 {
+    font-size: 50px;
+    width: 37.5%;
+    margin-top: 7.8%;
+    margin-bottom: 5%;
+}
+h3 {
+    font-size: 25px;
+}
+.sport-text {
+    font-size: 15px; 
+    width: 87.5%;
+}
+.sport-text-1 {
+    margin-bottom: 31%;
+}
+.sport-text-2 {
+    margin-bottom: 15%;
+}
+.sport-text-3 {
+    height: 210px; 
+    width: 100%;
+}
+.players .sport-text-2 .sport-text-content, .players .sport-text-3 .sport-text-content {
+    font-weight: 300;
+}
+.players .sport-text-3 {
+    height: 190px;
+}
+.text-3-container {
+    width: 87.5%;
+}
+.athlets .text-3-container {
+    margin-left: 8%;
+    margin-right: 0;
+    left: 0;
+}
+.players .text-3-container {
+    margin-left: 8%;
+    left: 0;
+}
+.sport h3 {
+    margin-left: 25px;
+}
+.number::after {
+    width: 18px;
+}
+.sport-text-content {
+    margin-top: 30px;
+}
+.athlet {
+    background: url("../img/footballer.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    right: 50%;
+}
+.player {
+    background: url("../img/basketballer.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    left: 45%;
+    bottom: 6%;
+    z-index: -3;
+}
+.players .sport-text-3{
+    z-index: -4;
+}
 }
 
 
@@ -857,4 +974,21 @@ h3 {
 .n-3 {
     top: 80%;    
 }     
+}
+@media screen and (min-width: 1921px) {
+.content {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-image {
+    width: 960px;
+    height: 38vw;
+}
+.content-text {
+    box-sizing: border-box;
+    width: 960px;
+    font-size: 24px;
+}  
 }
